@@ -30,7 +30,7 @@ export default function Hero() {
           </p>
 
           <div className="stores">
-            <button className="download">
+            {/* <button className="download">
               <span className="app-icon">
                 <Heart size={17} fill="white" />
               </span>
@@ -40,9 +40,18 @@ export default function Hero() {
                 <br />
                 <b>Our App</b>
               </span>
-            </button>
+            </button> */}
 
-            <button className="store">
+            <button
+              className="store"
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.connectinghearts",
+                  "_blank",
+                  "noopener,noreferrer",
+                )
+              }
+            >
               <Play size={17} fill="white" />
 
               <span>

@@ -89,23 +89,26 @@
 
 .download,
 .store {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 12px;
 
-  padding: 10px 14px;
-
+  padding: 10px 16px;
   border: 0;
-  border-radius: 9px;
+  border-radius: 12px;
 
   color: #fff;
-  background: $pink;
-
+  text-decoration: none;
   text-align: left;
-  font-size: 0.66rem;
-  line-height: 1.15;
+
+  font-size: 0.9rem;
+  line-height: 1.05;
 
   cursor: pointer;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    opacity 120ms ease;
 }
 
 .download b {
@@ -124,14 +127,46 @@
 }
 
 .store {
-  padding: 9px 13px;
-  background: $navy;
+  padding: 10px 14px;
+  background: linear-gradient(180deg, lighten($navy, 5%), $navy);
+  box-shadow: 0 8px 20px rgba(8, 18, 40, 0.12);
+}
+
+.store svg {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.store span {
+  display: flex;
+  flex-direction: column;
 }
 
 .store small {
-  display: block;
+  font-size: 0.56rem;
+  opacity: 0.85;
   margin-bottom: 2px;
-  font-size: 0.46rem;
+}
+
+.store {
+  font-weight: 700;
+}
+
+.store:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(8, 18, 40, 0.16);
+  opacity: 0.98;
+}
+
+.store:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 4px rgba(14, 64, 120, 0.12),
+    0 8px 20px rgba(8, 18, 40, 0.12);
 }
 
 /* =========================

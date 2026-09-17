@@ -91,16 +91,16 @@ export default function Safety() {
           <div className="official-contact">
             <h3>OUR OFFICIAL CONTACT DETAILS</h3>
 
-            <div className="contact-detail">
+            {/* <div className="contact-detail">
               <span className="contact-icon">
                 <Globe size={22} />
               </span>
 
               <div>
                 <strong>Website</strong>
-                <p>www.connectinghearts.in</p>
+                <p>connectingharts.info@gmail.com</p>
               </div>
-            </div>
+            </div> */}
 
             <div className="contact-detail">
               <span className="contact-icon">
@@ -120,7 +120,7 @@ export default function Safety() {
 
               <div>
                 <strong>Email</strong>
-                <p>support@connectinghearts.in</p>
+                <p>connectingharts.info@gmail.com</p>
               </div>
             </div>
           </div>
