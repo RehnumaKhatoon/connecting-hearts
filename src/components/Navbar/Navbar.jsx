@@ -7,9 +7,10 @@ export default function Navbar() {
   const links = [
     ["Home", "hero"],
     ["Features", "features"],
-    ["Safety", "features"],
-    ["Testimonials", "about"],
+    // ["Safety", "features"],
     ["About Us", "about"],
+    ["Membership", "membership"],
+    ["FAQ's", "faq"],
     ["Contact", "footer"],
   ];
   return (
@@ -31,11 +32,21 @@ export default function Navbar() {
               {n}
             </a>
           ))}
-          <a className="join mobile-join" href="#pricing">
+          <a
+            className="join mobile-join"
+            href="https://wa.me/919044312362"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             Join Now <span>→</span>
           </a>
         </nav>
-        <a className="join" href="#pricing">
+        <a
+          className="join"
+          href="https://wa.me/919044312362"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Join Now <span>→</span>
         </a>
         <button

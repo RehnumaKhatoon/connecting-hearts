@@ -70,8 +70,9 @@ export default function Footer() {
             <a href="#features">Features</a>
             <a href="#about">About Us</a>
             <a href="#pricing">Membership</a>
-            <a href="#testimonials">Success Stories</a>
-            <a href="#contact">Help Center</a>
+            {/* <a href="#testimonials">Success Stories</a> */}
+            <a href="#faq">FAQ's</a>
+            {/* <a href="#contact">Help Center</a> */}
           </div>
 
           {/* SAFETY */}
@@ -81,8 +82,8 @@ export default function Footer() {
             <a href="#safety">Safety Centre</a>
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms of Use</a>
-            <a href="#guidelines">Community Guidelines</a>
-            <a href="#report">Report a Concern</a>
+            {/* <a href="#guidelines">Community Guidelines</a> */}
+            {/* <a href="#report">Report a Concern</a> */}
           </div>
 
           {/* CONTACT */}
@@ -91,7 +92,7 @@ export default function Footer() {
 
             <div className="contact-item">
               <Mail size={20} />
-              <span>support@connectinghearts.in</span>
+              <span>connectingharts.info@gmail.com</span>
             </div>
 
             <div className="contact-item">
@@ -109,21 +110,33 @@ export default function Footer() {
             <h3 className="follow-title">Follow Us</h3>
 
             <div className="social-icons">
-              <a href="#" className="instagram" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/connecting_hearts_official?utm_source=qr&stkn=MWFkbjZ3YjZuZXdtNA=="
+                className="instagram"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </a>
 
-              <a href="#" className="facebook" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/share/1Eex4LgQYt/"
+                className="facebook"
+                aria-label="Facebook"
+              >
                 <FaFacebookF />
               </a>
 
-              <a href="#" className="youtube" aria-label="YouTube">
+              <a
+                href="https://youtube.com/@connectingheartsmatrimony?si=9xI_JNgxHjvId0wj"
+                className="youtube"
+                aria-label="YouTube"
+              >
                 <FaYoutube />
               </a>
 
-              <a href="#" className="linkedin" aria-label="LinkedIn">
+              {/* <a href="#" className="linkedin" aria-label="LinkedIn">
                 <FaLinkedinIn />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -154,8 +167,8 @@ export default function Footer() {
             <a href="#privacy">Privacy</a>
             <span></span>
             <a href="#terms">Terms</a>
-            <span></span>
-            <a href="#sitemap">Sitemap</a>
+            {/* <span></span> */}
+            {/* <a href="#sitemap">Sitemap</a> */}
           </div>
 
           <button
