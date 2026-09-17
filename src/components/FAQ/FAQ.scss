@@ -1,0 +1,99 @@
+@use "../../styles/variables" as *;
+.faq {
+  background: #fff5f5;
+}
+.faq-intro {
+  text-align: center;
+}
+.faq-intro .title {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+}
+.faq-intro p {
+  color: $muted;
+  font-size: 0.85rem;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 45px auto;
+}
+.faq-item {
+  border-bottom: 1px solid $border;
+}
+.faq-item button {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 19px 2px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  color: $navy;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+.faq-item svg {
+  transition: 0.2s;
+  color: $pink;
+}
+.faq-item.active svg {
+  transform: rotate(180deg);
+}
+.faq-item p {
+  margin: 0;
+  padding: 0 30px 20px 2px;
+  color: $muted;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+.help {
+  max-width: 800px;
+  margin: auto;
+  padding: 25px 28px;
+  background: $navy;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+}
+.help div {
+  margin-right: auto;
+}
+.help h3 {
+  font:
+    600 1.25rem "Playfair Display",
+    $serif;
+  margin: 0;
+}
+.help p {
+  font-size: 0.72rem;
+  color: #c8cfda;
+  margin: 5px 0 0;
+}
+.help a {
+  padding: 11px 14px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #fff;
+  color: $navy;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.help a:last-child {
+  background: $pink;
+  color: #fff;
+}
+@media (max-width: 650px) {
+  .help {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .help div {
+    grid-column: 1/-1;
+  }
+  .help a {
+    justify-content: center;
+  }
+}

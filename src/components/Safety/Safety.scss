@@ -1,0 +1,598 @@
+@use "../../styles/variables" as *;
+
+.safety-section {
+  position: relative;
+
+  padding: 75px 0 55px;
+
+  overflow: hidden;
+
+  background: #fff8f7;
+}
+
+.safety-section::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 15px;
+
+  border: 1px solid rgba(236, 211, 217, 0.35);
+
+  border-radius: 18px;
+
+  pointer-events: none;
+}
+
+/* =========================================
+   MAIN WRAPPER
+========================================= */
+
+.safety-wrapper {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    1.25fr
+    1.1fr
+    0.9fr;
+
+  gap: 42px;
+
+  align-items: center;
+
+  padding: 5px 5px 35px;
+}
+
+/* =========================================
+   LEFT INTRO
+========================================= */
+
+.safety-intro {
+  display: flex;
+
+  align-items: center;
+
+  gap: 38px;
+
+  min-width: 0;
+}
+
+/* Shield */
+
+.shield-area {
+  position: relative;
+
+  width: 220px;
+  min-width: 220px;
+  height: 230px;
+
+  display: grid;
+  place-items: center;
+}
+
+.shield-shape {
+  width: 145px;
+  height: 170px;
+
+  display: grid;
+  place-items: center;
+
+  color: white;
+
+  background: linear-gradient(145deg, #f45b89, #d91e5d);
+
+  clip-path: polygon(
+    50% 0%,
+    94% 20%,
+    88% 63%,
+    70% 84%,
+    50% 100%,
+    30% 84%,
+    12% 63%,
+    6% 20%
+  );
+
+  filter: drop-shadow(0 12px 8px rgba(210, 31, 91, 0.18));
+
+  border: 8px solid #f6bfd0;
+}
+
+.shield-shape svg {
+  stroke-width: 1.5;
+}
+
+/* Heart */
+
+.shield-heart {
+  position: absolute;
+
+  right: 27px;
+  bottom: 25px;
+
+  width: 65px;
+  height: 65px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: $pink;
+
+  box-shadow: 0 8px 18px rgba(231, 45, 104, 0.28);
+}
+
+/* Sparks */
+
+.spark {
+  position: absolute;
+
+  color: $pink;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  transform: rotate(-20deg);
+}
+
+.spark-one {
+  left: 45px;
+  top: 5px;
+}
+
+.spark-two {
+  left: 82px;
+  top: -2px;
+
+  transform: rotate(10deg);
+}
+
+.spark-three {
+  left: 125px;
+  top: 17px;
+
+  transform: rotate(35deg);
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.eyebrow {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: $pink;
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+.safety-content h2 {
+  margin: 0 0 17px;
+
+  color: $navy;
+
+  font-family: "Playfair Display", $serif;
+
+  font-size: clamp(2.8rem, 4vw, 4rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.045em;
+}
+
+.safety-content h2 em {
+  color: $pink;
+
+  font-style: normal;
+}
+
+.safety-content p {
+  max-width: 400px;
+
+  margin: 0;
+
+  color: $muted;
+
+  font-size: 0.8rem;
+
+  line-height: 1.65;
+}
+
+/* =========================================
+   SAFETY POINTS
+========================================= */
+
+.safety-points {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 23px;
+
+  padding-left: 35px;
+
+  border-left: 1px solid #e7dfe1;
+}
+
+.safety-point {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 17px;
+}
+
+.point-icon {
+  width: 58px;
+  height: 58px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  color: $pink;
+
+  background: #fde4eb;
+}
+
+.safety-point h3 {
+  margin: 4px 0 6px;
+
+  color: $navy;
+
+  font-family: "Playfair Display", $serif;
+
+  font-size: 1.02rem;
+}
+
+.safety-point p {
+  max-width: 300px;
+
+  margin: 0;
+
+  color: $muted;
+
+  font-size: 0.72rem;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   OFFICIAL CONTACT
+========================================= */
+
+.official-contact {
+  align-self: stretch;
+
+  padding: 25px 27px;
+
+  border-radius: 13px;
+
+  background: #fde9ef;
+
+  border: 1px solid #f7dce4;
+}
+
+.official-contact > h3 {
+  margin: 0 0 22px;
+
+  color: $pink;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.contact-detail {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 19px;
+}
+
+.contact-detail:last-child {
+  margin-bottom: 0;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  color: $pink;
+
+  background: #fbdce6;
+}
+
+.contact-detail strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: $navy;
+
+  font-family: "Playfair Display", $serif;
+
+  font-size: 0.88rem;
+}
+
+.contact-detail p {
+  margin: 0;
+
+  color: #3f4a5f;
+
+  font-size: 0.73rem;
+}
+
+/* =========================================
+   BOTTOM STRIP
+========================================= */
+
+.safety-bottom {
+  position: relative;
+
+  z-index: 3;
+
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 13px 35px;
+
+  border-radius: 12px;
+
+  background: #fde6ec;
+}
+
+.bottom-heart {
+  color: $pink;
+
+  display: grid;
+  place-items: center;
+}
+
+.bottom-title {
+  padding-right: 20px;
+
+  border-right: 1px solid #dcbfc8;
+
+  color: $navy;
+
+  font-family: "Playfair Display", $serif;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.bottom-line {
+  display: none;
+}
+
+.safety-bottom p {
+  margin: 0;
+
+  color: #657084;
+
+  font-size: 0.73rem;
+}
+
+/* =========================================
+   REAL CONNECTIONS
+========================================= */
+
+.real-connections {
+  margin-left: auto;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  color: $pink;
+
+  font-family: "Playfair Display", $serif;
+
+  font-size: 1.35rem;
+
+  font-style: italic;
+
+  line-height: 0.95;
+
+  text-align: right;
+
+  transform: rotate(-5deg);
+
+  white-space: nowrap;
+}
+
+.real-connections i {
+  position: absolute;
+
+  right: -30px;
+  bottom: -3px;
+
+  font-family: Arial;
+
+  font-size: 35px;
+
+  font-style: normal;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1150px) {
+  .safety-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .safety-intro {
+    grid-column: span 2;
+  }
+
+  .safety-content {
+    flex: 1;
+  }
+
+  .official-contact {
+    grid-column: 2;
+  }
+
+  .safety-bottom {
+    gap: 14px;
+  }
+
+  .real-connections {
+    display: none;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+  .safety-section {
+    padding: 60px 0 45px;
+  }
+
+  .safety-section::before {
+    inset: 8px;
+  }
+
+  .safety-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding-bottom: 30px;
+  }
+
+  .safety-intro {
+    grid-column: auto;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 15px;
+  }
+
+  .shield-area {
+    width: 190px;
+    min-width: 190px;
+    height: 200px;
+  }
+
+  .shield-shape {
+    width: 125px;
+    height: 150px;
+  }
+
+  .shield-heart {
+    right: 12px;
+    bottom: 12px;
+
+    width: 55px;
+    height: 55px;
+  }
+
+  .safety-content p {
+    margin-inline: auto;
+  }
+
+  .safety-points {
+    padding-left: 0;
+
+    border-left: 0;
+  }
+
+  .official-contact {
+    grid-column: auto;
+  }
+
+  .safety-bottom {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 18px;
+  }
+
+  .bottom-title {
+    border-right: 0;
+
+    padding-right: 0;
+
+    white-space: normal;
+  }
+
+  .safety-bottom p {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+  .safety-content h2 {
+    font-size: 2.7rem;
+  }
+
+  .safety-point {
+    gap: 12px;
+  }
+
+  .point-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .safety-point h3 {
+    font-size: 0.95rem;
+  }
+
+  .official-contact {
+    padding: 22px 18px;
+  }
+
+  .contact-detail p {
+    font-size: 0.68rem;
+  }
+}
