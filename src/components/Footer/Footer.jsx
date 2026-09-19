@@ -8,6 +8,9 @@ import {
 
 import "./Footer.scss";
 import logo from "../../assets/logo/logo.jpeg";
+import PrivacyPolicy from "../../assets/Folder/Privacy_Policy_26June.pdf";
+// import TermsOfUse from "../../assets/Folder/Term_of_condition.pdf";
+import Terms from "../../assets/Folder/Term_of_use.pdf";
 
 export default function Footer() {
   const scrollTop = () => {
@@ -80,8 +83,12 @@ export default function Footer() {
             <h3>Safety & Privacy</h3>
 
             <a href="#safety">Safety Centre</a>
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Use</a>
+            <a href={PrivacyPolicy} target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>
+            <a href={Terms} target="_blank" rel="noopener noreferrer">
+              Terms of Use
+            </a>
             {/* <a href="#guidelines">Community Guidelines</a> */}
             {/* <a href="#report">Report a Concern</a> */}
           </div>
@@ -92,12 +99,17 @@ export default function Footer() {
 
             <div className="contact-item">
               <Mail size={20} />
-              <span>connectingharts.info@gmail.com</span>
+              <span>connecting.hearts@heartfulness.org </span>
+            </div>
+
+            <div className="contact-item">
+              <Mail size={20} />
+              <span>connectinghearts.info@gmail.com</span>
             </div>
 
             <div className="contact-item">
               <Phone size={20} />
-              <span>+91 9044312362</span>
+              <span>+91 9452613159</span>
             </div>
 
             <div className="contact-item">
@@ -164,9 +176,13 @@ export default function Footer() {
           </p>
 
           <div className="footer-links">
-            <a href="#privacy">Privacy</a>
+            <a href={PrivacyPolicy} target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>
             <span></span>
-            <a href="#terms">Terms</a>
+            <a href={Terms} target="_blank" rel="noopener noreferrer">
+              Terms
+            </a>
             {/* <span></span> */}
             {/* <a href="#sitemap">Sitemap</a> */}
           </div>

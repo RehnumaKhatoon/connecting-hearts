@@ -34,7 +34,7 @@ export default function Navbar() {
           ))}
           <a
             className="join mobile-join"
-            href="https://wa.me/919044312362"
+            href="https://wa.me/919452613159"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -43,7 +43,7 @@ export default function Navbar() {
         </nav>
         <a
           className="join"
-          href="https://wa.me/919044312362"
+          href="https://wa.me/919452613159"
           target="_blank"
           rel="noreferrer noopener"
         >

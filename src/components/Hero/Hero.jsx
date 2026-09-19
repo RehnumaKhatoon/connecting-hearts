@@ -25,8 +25,10 @@ export default function Hero() {
           </h1>
 
           <p>
-            It is an independent initiative started by our fellow abhyasi
-            brother and sisters.
+            Connecting Hearts is a trusted matrimonial platform exclusively for
+            Heartfulness practitioners, built on values, trust and spiritual
+            compatibility. It is an independent initiative started by our fellow
+            abhyasi brother and sisters.
           </p>
 
           <div className="stores">

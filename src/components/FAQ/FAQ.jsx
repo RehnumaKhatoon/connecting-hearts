@@ -51,10 +51,10 @@ export default function FAQ() {
             <h3>Still have questions?</h3>
             <p>We're always here to help you on your journey.</p>
           </div>
-          <a href="mailto:connectingharts.info@gmail.com">
+          <a href="mailto:connecting.hearts@heartfulness.org ">
             <Mail size={17} /> Email Us
           </a>
-          <a href="https://wa.me/919044312362" target="_blank">
+          <a href="https://wa.me/919452613159" target="_blank">
             <Phone size={17} /> Call / WhatsApp
           </a>
         </div>

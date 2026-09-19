@@ -109,7 +109,7 @@ export default function Safety() {
 
               <div>
                 <strong>Call / WhatsApp</strong>
-                <p>+91 9044312362</p>
+                <p>+91 9452613159</p>
               </div>
             </div>
 
@@ -119,8 +119,19 @@ export default function Safety() {
               </span>
 
               <div>
-                <strong>Email</strong>
-                <p>connectingharts.info@gmail.com</p>
+                <strong>Official Email</strong>
+                <p>connecting.hearts@heartfulness.org </p>
+              </div>
+            </div>
+
+            <div className="contact-detail">
+              <span className="contact-icon">
+                <Mail size={22} />
+              </span>
+
+              <div>
+                <strong>Support Email</strong>
+                <p>connectinghearts.info@gmail.com</p>
               </div>
             </div>
           </div>
