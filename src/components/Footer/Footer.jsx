@@ -172,7 +172,7 @@ export default function Footer() {
 
           <p className="made-with">
             <Heart size={17} fill="currentColor" />
-            Built with care for a kinder, more connected world.
+            Building meaningful connections, rooted in trust and values.
           </p>
 
           <div className="footer-links">

@@ -14,9 +14,9 @@ const questions = [
   "Where is Connecting Hearts available?",
 ];
 const answers = [
-  "Connecting Hearts is a dedicated matrimonial platform that helps Heartfulness practitioners find a compatible life partner based on shared values and spiritual purpose.",
+  "Connecting Hearts is a dedicated matrimonial platform that helps Heartfulness practitioners find a compatible life partner based on shared values and spiritual purpose. Its NOT a Heartfulness product and is an independent initiative started by fellow abhyasi brother and sisters.",
   "Heartfulness abhyasis and practitioners seeking a sincere, respectful, and meaningful relationship are welcome to join.",
-  "Connecting Hearts serves the Heartfulness community independently and is designed around its shared values.",
+  "No, Connecting Hearts is not a Heartfulness product. It serves the Heartfulness community independently and is designed around its shared values.",
   "Yes. We prioritize privacy and offer controls for your photos, contact details and communication.",
   "Free members can browse, shortlist, send interest and use the safety features available on the platform.",
   "Premium membership unlocks contact viewing, privacy controls, messaging and profile visibility benefits.",
