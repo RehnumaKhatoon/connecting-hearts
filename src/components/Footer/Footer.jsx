@@ -155,13 +155,13 @@ export default function Footer() {
 
         {/* Decorative text */}
 
-        <div className="footer-side-text">
+        {/* <div className="footer-side-text">
           <span>Good People</span>
           <span>Brighter</span>
           <span>Futures</span>
 
           <i></i>
-        </div>
+        </div> */}
       </div>
 
       {/* ================= BOTTOM BAR ================= */}
