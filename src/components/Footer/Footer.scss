@@ -515,28 +515,80 @@
 .back-top:hover {
   transform: translateY(-3px);
 }
-
 /* =========================================
-   LARGE SCREEN
+   DESKTOP / SMALL DESKTOP
 ========================================= */
 
-@media (max-width: 1250px) {
+@media (max-width: 1100px) {
   .footer > .container {
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
   }
 
   .footer-main {
-    grid-template-columns:
-      1.3fr
-      0.75fr
-      0.9fr
-      1.25fr;
-
+    grid-template-columns: 1.3fr 0.8fr 0.9fr 1.2fr;
     gap: 25px;
   }
 
+  .footer-column,
+  .footer-contact {
+    padding-left: 18px;
+  }
+
   .footer-side-text {
-    right: 5px;
+    right: -20px;
+    font-size: 1.4rem;
+  }
+
+  .footer-tagline {
+    font-size: 1.3rem;
+  }
+}
+
+/* =========================================
+   DESKTOP SITE ON MOBILE / TABLET
+   Around 980px viewport
+========================================= */
+
+@media (max-width: 900px) {
+  .footer > .container {
+    width: calc(100% - 50px);
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 45px 0;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .footer-column,
+  .footer-contact {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .footer-side-text {
+    right: 10px;
+    top: 100px;
+    font-size: 1.2rem;
+    opacity: 0.15;
+  }
+
+  .footer-heart {
+    opacity: 0.12;
+  }
+
+  .footer-leaves {
+    opacity: 0.12;
+  }
+
+  .footer-bottom-inner {
+    flex-wrap: wrap;
+    padding: 18px 0;
+    gap: 18px;
   }
 }
 
@@ -544,70 +596,14 @@
    TABLET
 ========================================= */
 
-@media screen and (max-width: 950px) {
+@media (max-width: 700px) {
   .footer > .container {
-    width: calc(100% - 40px);
-    max-width: 100%;
+    width: calc(100% - 36px);
   }
 
   .footer-main {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 35px 30px;
-    padding: 45px 0 40px;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
-
-  .footer-column,
-  .footer-contact {
-    padding-left: 0;
-    border-left: none;
-    min-width: 0;
-  }
-
-  .footer-side-text {
-    right: 0;
-    opacity: 0.1;
-    pointer-events: none;
-  }
-
-  .footer-heart {
-    opacity: 0.08;
-    pointer-events: none;
-  }
-
-  .footer-leaves {
-    opacity: 0.1;
-    pointer-events: none;
-  }
-
-  .footer-bottom-inner {
-    flex-wrap: wrap;
-    padding: 18px 0;
-  }
-}
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 650px) {
-  .footer {
-    overflow: hidden;
-  }
-
-  .footer > .container {
-    width: calc(100% - 32px);
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .footer-main {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 30px;
     padding: 40px 0 35px;
   }
 
@@ -615,8 +611,64 @@
     grid-column: auto;
   }
 
+  .footer-column,
+  .footer-contact {
+    width: 100%;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .footer-side-text {
+    display: none;
+  }
+
+  .footer-heart {
+    display: none;
+  }
+
+  .footer-leaves {
+    display: none;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 14px;
+    padding: 20px 0 25px;
+  }
+
+  .footer-links {
+    order: 3;
+  }
+
+  .back-top {
+    order: 4;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .footer > .container {
+    width: calc(100% - 28px);
+  }
+
+  .footer-main {
+    gap: 28px;
+    padding: 35px 0 30px;
+  }
+
   .footer-logo {
+    gap: 9px;
     margin-bottom: 18px;
+  }
+
+  .logo-box {
+    width: 45px;
+    height: 45px;
   }
 
   .footer-logo strong {
@@ -624,7 +676,7 @@
   }
 
   .footer-description {
-    font-size: 0.8rem;
+    font-size: 0.76rem;
     line-height: 1.6;
   }
 
@@ -633,148 +685,54 @@
   }
 
   .footer-tagline {
-    margin-top: 22px;
-    font-size: 1.2rem;
-  }
-
-  /* Footer columns */
-  .footer-column,
-  .footer-contact {
-    width: 100%;
-    padding-left: 0;
-    border-left: 0;
+    font-size: 1.1rem;
+    margin-top: 20px;
   }
 
   .footer-column h3,
   .footer-contact h3 {
-    margin: 0 0 14px;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+    margin-bottom: 13px;
   }
 
   .footer-column a {
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     margin-bottom: 10px;
   }
 
   .contact-item {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     gap: 10px;
-    margin-bottom: 14px;
-    word-break: break-word;
+    margin-bottom: 13px;
   }
 
   .contact-item span {
     overflow-wrap: anywhere;
   }
 
-  .footer-divider {
-    margin: 18px 0 14px;
-  }
-
   .social-icons {
-    gap: 10px;
+    gap: 9px;
   }
 
   .social-icons a {
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
   }
 
-  /* Hide decorative text on mobile */
-  .footer-side-text {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-  }
-
-  .footer-heart {
-    display: none;
-  }
-
-  .footer-leaves {
-    display: none;
-  }
-
-  /* Bottom section */
   .footer-bottom-inner {
-    width: calc(100% - 32px);
-    min-height: auto;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    gap: 12px;
-
-    padding: 18px 0 22px;
-
-    text-align: center;
+    width: calc(100% - 28px);
   }
 
   .footer-bottom p {
-    font-size: 0.68rem;
-    line-height: 1.5;
-  }
-
-  .made-with {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .footer-links {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    font-size: 0.65rem;
   }
 
   .footer-links a {
-    font-size: 0.68rem;
+    font-size: 0.65rem;
   }
 
   .back-top {
     width: 40px;
     height: 40px;
-  }
-}
-
-/* =========================================
-   SMALL MOBILE
-========================================= */
-
-@media (max-width: 420px) {
-  .footer > .container {
-    width: calc(100% - 24px);
-  }
-
-  .footer-main {
-    gap: 28px;
-    padding-top: 35px;
-  }
-
-  .footer-logo {
-    gap: 9px;
-  }
-
-  .logo-box {
-    width: 45px;
-    height: 45px;
-  }
-
-  .footer-description {
-    font-size: 0.76rem;
-  }
-
-  .footer-tagline {
-    font-size: 1.05rem;
-  }
-
-  .contact-item {
-    font-size: 0.68rem;
-  }
-
-  .footer-bottom-inner {
-    width: calc(100% - 24px);
   }
 }
