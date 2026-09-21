@@ -718,18 +718,7 @@
 
   /* Decorative elements */
   .footer-side-text {
-    display: flex;
-    right: -35px;
-    top: 105px;
-
-    color: rgba(233, 150, 177, 0.12);
-
-    opacity: 0.35;
-
-    font-size: 1.15rem;
-
-    pointer-events: none;
-    z-index: 0;
+    display: none;
   }
 
   .footer-side-text i {
