@@ -55,7 +55,7 @@ const questions = [
 ];
 
 const answers = [
-  "Connecting Hearts is a matrimonial platform created especially for Heartfulness/SRCM abhyasis who are sincerely looking for a spiritually aligned life partner. Our purpose is to provide a trusted and respectful space for genuine seekers to connect. It is a third party app initiated by fellow Heartfulness abhyasis.",
+  "Connecting Hearts is a matrimonial platform created especially for Heartfulness/SRCM abhyasis who are sincerely looking for a spiritually aligned life partner. Our purpose is to provide a trusted and respectful space for genuine seekers to connect. It is NOT a Heartfulness product. It is an independent initiative started by fellow abhyasi brother and sisters.",
 
   "Connecting Hearts is meant only for Heartfulness/SRCM abhyasis. Users are required to submit their Heartfulness/SRCM ID and Preceptor details during registration for verification purposes.",
 
