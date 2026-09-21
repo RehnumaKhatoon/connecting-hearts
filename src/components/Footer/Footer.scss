@@ -718,8 +718,24 @@
 
   /* Decorative elements */
   .footer-side-text {
-    display: none;
+    display: flex;
+    right: -35px;
+    top: 105px;
+
+    color: rgba(233, 150, 177, 0.12);
+
+    opacity: 0.35;
+
+    font-size: 1.15rem;
+
+    pointer-events: none;
+    z-index: 0;
   }
+
+  .footer-side-text i {
+    background: rgba(233, 150, 177, 0.12);
+  }
+}
 
   .footer-heart {
     right: -35px;
